@@ -35,6 +35,7 @@ Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: head
 - Immigration quotes on the full ballot ("See what they said") show `[Immigration quote from the ballot]`.
 - The Candidate A / Candidate B outlines in the compare animation are illustrative only.
 - Reading-time estimates (about 15 seconds per quote).
+- Upcoming races District 2, 3 and 8 open the full flow but use bracketed placeholders for the topic name, question, both quotes and candidate names (`[Candidate 1 name]`, etc.). The prototype's shared race data (`window.RR` in `landing.html`) is where real content goes.
 
 ## Open questions for the team
 
