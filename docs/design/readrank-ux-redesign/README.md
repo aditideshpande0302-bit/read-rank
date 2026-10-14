@@ -25,7 +25,7 @@ This folder holds a clickable HTML prototype of a visual/UX refresh of the Read 
 
 ## Layout consistency with Treasury Tracker
 
-Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: header up to 1512px wide with 16px/24px padding and 43px logos; landing hero with 48/64/96px side margins and 64px vertical padding beside a 380px step column; inner content up to 1400px wide with 24px side margins; 1px `#D3D7DE` borders; 16px corners on step cards and large panels, 12px on content cards, inputs and buttons; footer up to 1280px wide with 32px/40px vertical padding.
+Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: header up to 1512px wide with 16px/24px padding and 43px logos; landing hero with 48/64/96px side margins and 64px vertical padding beside a 380px step column; every screen uses the landing hero's side margins (96px on wide screens, 64px tablet, 48px small laptop, 16px phone); 1px `#D3D7DE` borders; 16px corners on step cards and large panels, 12px on content cards, inputs and buttons; footer up to 1280px wide with 32px/40px vertical padding.
 
 ## Placeholder content (must be replaced with real data)
 
