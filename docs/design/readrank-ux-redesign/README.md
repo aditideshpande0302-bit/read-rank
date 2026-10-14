@@ -23,6 +23,10 @@ This folder holds a clickable HTML prototype of a visual/UX refresh of the Read 
 | 8 | Compass step 2: your stances, with a 2-step guide pop-up | `10-stances-guide.png`, `11-stances.png` |
 | 9 | Compass step 3: compass ready, compare animation | `12-compass-ready-compared.png` |
 
+## Layout consistency with Treasury Tracker
+
+Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: header up to 1512px wide with 16px/24px padding and 43px logos; landing hero with 48/64/96px side margins and 64px vertical padding beside a 380px step column; inner content up to 1400px wide with 24px side margins; 1px `#D3D7DE` borders; 16px corners on step cards and large panels, 12px on content cards, inputs and buttons; footer up to 1280px wide with 32px/40px vertical padding.
+
 ## Placeholder content (must be replaced with real data)
 
 - The second Housing quote ("Local zoning should allow more homes near jobs and transit…").
