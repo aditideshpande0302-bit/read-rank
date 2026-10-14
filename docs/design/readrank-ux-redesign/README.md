@@ -49,5 +49,5 @@ Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: head
 - `prototype/index.html` — the combined, clickable prototype (open this).
 - `prototype/*.html` — one file per screen (landing, browse, issues, read, ballot, compass, stances, ready).
 - `prototype/build_flow.py` — combines the screen files into `index.html` (`python3 build_flow.py`). Its output omits the `<!doctype html>` / `<head>` wrapper, which was added to the checked-in `index.html` so it opens directly in a browser.
-- `prototype/assets/` — the official Empowered Vote and Read & Rank logos, unchanged.
+- `prototype/assets/` — the official Empowered Vote and Read & Rank logos, unchanged, and `ballot-figure.png`, the ballot-casting figure from the empowered.vote homepage (`ev-landing/icons/Sticks/noun_ballot_3139174.png`, a Noun Project icon — confirm the team's license covers reuse here). It is recolored with a CSS mask on the ballot loading step, the Topic complete card and the full-ballot banner.
 - `screenshots/` — desktop captures at 1280px wide. They were captured without network access, so text renders in a fallback font instead of Manrope.
