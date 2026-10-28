@@ -248,7 +248,13 @@
     #s-landing .hero { grid-template-columns: minmax(0, 1fr) 380px; gap: 96px; }
   }
   @media (max-width: 560px) { #s-landing .hero.wrap, #s-landing .elections.wrap { padding-inline: 16px; } }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-landing .product .logo-light { display: var(--logo-light); }
+  #s-landing .product .logo-dark { display: var(--logo-dark); }
 
 
   :root {
@@ -513,7 +519,13 @@
   #s-issues .bar > .wrap { max-width: none; padding-inline: 0; }
   #s-issues .page { max-width: none; }
   @media (max-width: 900px) { #s-issues .catnav { margin-inline: calc(-1 * var(--side)); padding-inline: var(--side); } }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-issues .product .logo-light { display: var(--logo-light); }
+  #s-issues .product .logo-dark { display: var(--logo-dark); }
 
 
   :root {
@@ -892,7 +904,13 @@
   }
   @media (prefers-reduced-motion: reduce) { #s-read .ballot-fig .slip { animation: none !important; opacity: 1; } }
   #s-read .done-fig { width: 120px; margin-bottom: -8px; }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-read .product .logo-light { display: var(--logo-light); }
+  #s-read .product .logo-dark { display: var(--logo-dark); }
 
 
   :root {
@@ -1263,7 +1281,13 @@
   @media (max-width: 1023px) { #s-ballot .hero-fig { display: none; } }
   #s-ballot .mark.rank { background: var(--teal-tint); color: var(--teal); font-weight: 800; font-size: 14px; }
   #s-ballot .mark.none { color: var(--ink-3); font-weight: 700; }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-ballot .product .logo-light { display: var(--logo-light); }
+  #s-ballot .product .logo-dark { display: var(--logo-dark); }
 
 
   :root {
@@ -1510,7 +1534,13 @@
   #s-browse .bar > .wrap { max-width: none; padding-inline: 0; }
   #s-browse .page { max-width: none; }
   @media (max-width: 900px) { #s-browse .catnav { margin-inline: calc(-1 * var(--side)); padding-inline: var(--side); } }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-browse .product .logo-light { display: var(--logo-light); }
+  #s-browse .product .logo-dark { display: var(--logo-dark); }
 
 
   :root {
@@ -1805,7 +1835,13 @@
   #s-compass .bar > .wrap { max-width: none; padding-inline: 0; }
   #s-compass .page { max-width: none; }
   @media (max-width: 900px) { #s-compass .catnav { margin-inline: calc(-1 * var(--side)); padding-inline: var(--side); } }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-compass .product .logo-light { display: var(--logo-light); }
+  #s-compass .product .logo-dark { display: var(--logo-dark); }
 
 
   :root {
@@ -2107,7 +2143,13 @@
   #s-stances .bar > .wrap { max-width: none; padding-inline: 0; }
   #s-stances .page { max-width: none; }
   @media (max-width: 900px) { #s-stances .catnav { margin-inline: calc(-1 * var(--side)); padding-inline: var(--side); } }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-stances .product .logo-light { display: var(--logo-light); }
+  #s-stances .product .logo-dark { display: var(--logo-dark); }
 
 
   :root {
@@ -2339,7 +2381,13 @@
   #s-ready .bar > .wrap { max-width: none; padding-inline: 0; }
   #s-ready .page { max-width: none; }
   @media (max-width: 900px) { #s-ready .catnav { margin-inline: calc(-1 * var(--side)); padding-inline: var(--side); } }
-  /* end EV layout */
+  
+  
+  :root { --logo-light: block; --logo-dark: none; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-light: none; --logo-dark: block; } }
+  :root[data-theme="dark"] { --logo-light: none; --logo-dark: block; }
+  #s-ready .product .logo-light { display: var(--logo-light); }
+  #s-ready .product .logo-dark { display: var(--logo-dark); }
 
 .screen { flex: 1 0 auto; display: flex; flex-direction: column; }
 .screen[hidden] { display: none; }
@@ -2353,7 +2401,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">
@@ -2530,7 +2578,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">
@@ -2641,7 +2689,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">
@@ -2756,7 +2804,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">
@@ -2914,7 +2962,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">
@@ -3072,7 +3120,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">
@@ -3621,7 +3669,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">
@@ -3735,7 +3783,7 @@
       <img src="assets/empowered-vote-logo.png" width="133" height="30" alt="empowered.vote">
     </a>
     <a class="product" href="#top" aria-label="Read and Rank">
-      <img src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank">
+      <img class="logo-light" src="assets/read-rank-logo.png" width="107" height="48" alt="read &amp; rank"><img class="logo-dark" src="assets/read-rank-logo-dark.svg" width="124" height="48" alt="read &amp; rank">
     </a>
     <div class="actions">
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch color theme">

@@ -41,7 +41,7 @@ Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: head
 
 1. **Palette.** The prototype uses teal `#0E6A80`, coral `#EF5B3E`, yellow `#F6C343` and navy text `#1B1E3B`. `REDESIGN_SPEC.md` specifies ev-ui tokens (ev-teal `#00657c`, ev-coral `#ff5740`, ev-yellow `#fed12e`, ev-black `#1c1c1c`) and uses coral for Agree. Implementation should use the ev-ui tokens; the Agree/Disagree color roles need a decision.
 2. **Reveal model.** The prototype reveals candidates on one full-ballot screen. `CLAUDE.md` / `REDESIGN_SPEC.md` describe a per-topic reveal where the ballot grows as each topic is ranked.
-3. **Dark mode logos.** The official logos (used unchanged) have dark teal text that is hard to read on the dark header. Options: keep the header white in dark mode, or add light logo variants.
+3. **Dark mode logos.** The Read & Rank logo switches to its official dark-theme version (`assets/read-rank-logo-dark.svg`) in dark mode. The Empowered Vote logo has no dark version yet; its dark teal text is hard to read on the dark header.
 4. **"Place the rest as agreed"** from the current ranking panel is not in the prototype; its intended behavior should be confirmed.
 5. **Your own stance** is placed on the middle ring for now (the placement slider was removed on request).
 
