@@ -13,7 +13,7 @@ This folder holds a clickable HTML prototype of a visual/UX refresh of the Read 
 
 | # | Screen | Screenshot |
 |---|---|---|
-| 1 | Landing: hero with an animated Bobit who walks through the three steps on his own (hover pauses, click skips ahead), choose an election (Upcoming / Past) | `01-landing.png`, `02-landing-past-races.png` |
+| 1 | Landing: hero with an animated Bobit who walks through the three steps on his own, in a different logo color per step (teal, yellow, coral), holding a book and then a ranking board; hover pauses, a click makes him hop to the next step; choose an election (Upcoming / Past) | `01-landing.png`, `02-landing-past-races.png` |
 | 2 | Browse other races: search, office filters, state picker (all 50 states) | `03-browse-races.png` |
 | 3 | Choose your issues (in-progress race) | `04-choose-issues.png` |
 | 4 | Read a quote: agree / disagree, arrow-key shortcuts | `05-read-quote.png` |
