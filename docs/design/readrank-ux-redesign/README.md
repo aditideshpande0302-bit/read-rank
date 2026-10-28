@@ -13,7 +13,7 @@ This folder holds a clickable HTML prototype of a visual/UX refresh of the Read 
 
 | # | Screen | Screenshot |
 |---|---|---|
-| 1 | Landing: hero with Bobit explaining the three steps (click the step circles), choose an election (Upcoming / Past) | `01-landing.png`, `02-landing-past-races.png` |
+| 1 | Landing: hero with an animated Bobit who walks through the three steps on his own (hover pauses, click skips ahead), choose an election (Upcoming / Past) | `01-landing.png`, `02-landing-past-races.png` |
 | 2 | Browse other races: search, office filters, state picker (all 50 states) | `03-browse-races.png` |
 | 3 | Choose your issues (in-progress race) | `04-choose-issues.png` |
 | 4 | Read a quote: agree / disagree, arrow-key shortcuts | `05-read-quote.png` |
@@ -50,5 +50,5 @@ Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: head
 - `prototype/index.html` — the combined, clickable prototype (open this).
 - `prototype/*.html` — one file per screen (landing, browse, issues, read, ballot, compass, stances, ready).
 - `prototype/build_flow.py` — combines the screen files into `index.html` (`python3 build_flow.py`). Its output omits the `<!doctype html>` / `<head>` wrapper, which was added to the checked-in `index.html` so it opens directly in a browser.
-- `prototype/assets/` — the official Empowered Vote and Read & Rank logos, unchanged, and `ballot-figure.png`, the ballot-casting figure from the empowered.vote homepage (`ev-landing/icons/Sticks/noun_ballot_3139174.png`, a Noun Project icon — confirm the team's license covers reuse here). It is recolored with a CSS mask on the ballot loading step, the Topic complete card, the full-ballot banner and step 3 of the landing page's Bobit. `bobit-explain.png` and `bobit-read.png` are Bobit poses from the same Sticks folder (`noun-teacher-explaining-642084`, `noun-teacher-reading-642108`), used on the landing page's "How it works" steps under the same license question.
+- `prototype/assets/` — the official Empowered Vote and Read & Rank logos, unchanged, and `ballot-figure.png`, the ballot-casting figure from the empowered.vote homepage (`ev-landing/icons/Sticks/noun_ballot_3139174.png`, a Noun Project icon — confirm the team's license covers reuse here). It is recolored with a CSS mask on the ballot loading step, the Topic complete card and the full-ballot banner. `leremy-rig.js` and `ev-anim-extras.js` are copied unchanged from `ev-landing`; they draw and animate the landing page's Bobit (body widths slimmed slightly through the rig's config).
 - `screenshots/` — desktop captures at 1280px wide. They were captured without network access, so text renders in a fallback font instead of Manrope.
