@@ -13,15 +13,14 @@ This folder holds a clickable HTML prototype of a visual/UX refresh of the Read 
 
 | # | Screen | Screenshot |
 |---|---|---|
-| 1 | Landing: hero, how it works, choose an election (Upcoming / Past) | `01-landing.png`, `02-landing-past-races.png` |
-| 2 | Browse other races: search, office filters, state picker (all 50 states) | `03-browse-races.png` |
-| 3 | Choose your issues (in-progress race) | `04-choose-issues.png` |
-| 4 | Read a quote: agree / disagree, arrow-key shortcuts | `05-read-quote.png` |
-| 5 | After answering: ranking panel (reorderable), disagreed tray, topic complete | `06-topic-complete-ranking.png` |
-| 6 | Your rankings (full ballot): loading step, then staged reveal | `07-ballot-loading.png`, `08-full-ballot.png` |
-| 7 | Compass step 1: choose topics (3–8) | `09-compass-choose-topics.png` |
-| 8 | Compass step 2: your stances, with a 2-step guide pop-up | `10-stances-guide.png`, `11-stances.png` |
-| 9 | Compass step 3: compass ready, compare animation | `12-compass-ready-compared.png` |
+| 1 | Landing: hero, how it works, choose an election (Upcoming / Past) — only races on the user's own ballot (US House, Senate, governor); a different place is picked with **Change** | `01-landing.png`, `02-landing-past-races.png` |
+| 2 | Choose your issues (in-progress race) | `04-choose-issues.png` |
+| 3 | Read a quote: agree / disagree, arrow-key shortcuts | `05-read-quote.png` |
+| 4 | After answering: ranking panel (reorderable), disagreed tray, topic complete | `06-topic-complete-ranking.png` |
+| 5 | Your rankings (full ballot): loading step, then staged reveal | `07-ballot-loading.png`, `08-full-ballot.png` |
+| 6 | Compass step 1: choose topics (3–8) | `09-compass-choose-topics.png` |
+| 7 | Compass step 2: your stances, with a 2-step guide pop-up | `10-stances-guide.png`, `11-stances.png` |
+| 8 | Compass step 3: compass ready, compare animation | `12-compass-ready-compared.png` |
 
 ## Layout consistency with Treasury Tracker
 
@@ -35,7 +34,8 @@ Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: head
 - Immigration quotes on the full ballot ("See what they said") show `[Immigration quote from the ballot]`.
 - The Candidate A / Candidate B outlines in the compare animation are illustrative only.
 - Reading-time estimates (about 15 seconds per quote).
-- Upcoming races District 2, 3 and 8 open the full flow but use bracketed placeholders for the topic name, question, both quotes and candidate names (`[Candidate 1 name]`, etc.). The prototype's shared race data (`window.RR` in `landing.html`) is where real content goes.
+- Past races (US Senator, Governor and US Representative District 7, Nov 5, 2024) show `[#] candidates · [#] topics` and aren't clickable in the prototype. Indiana has no U.S. Senate or governor race on the Nov 3, 2026 ballot, so Upcoming shows District 7 only.
+- The broad area shown is "Indianapolis, Indiana" (District 7). The **Change** button is not wired up in the prototype.
 
 ## Open questions for the team
 
@@ -48,7 +48,7 @@ Margins, borders and spacing follow the ev-ui values Treasury Tracker uses: head
 ## Files
 
 - `prototype/index.html` — the combined, clickable prototype (open this).
-- `prototype/*.html` — one file per screen (landing, browse, issues, read, ballot, compass, stances, ready).
+- `prototype/*.html` — one file per screen (landing, issues, read, ballot, compass, stances, ready).
 - `prototype/build_flow.py` — combines the screen files into `index.html` (`python3 build_flow.py`). Its output omits the `<!doctype html>` / `<head>` wrapper, which was added to the checked-in `index.html` so it opens directly in a browser.
 - `prototype/assets/` — the official Empowered Vote and Read & Rank logos, unchanged, and `ballot-figure.png`, the ballot-casting figure from the empowered.vote homepage (`ev-landing/icons/Sticks/noun_ballot_3139174.png`, a Noun Project icon — confirm the team's license covers reuse here). It is recolored with a CSS mask on the ballot loading step, the Topic complete card and the full-ballot banner.
 - `screenshots/` — desktop captures at 1280px wide. They were captured without network access, so text renders in a fallback font instead of Manrope.
